@@ -18,6 +18,11 @@
 }
 
 @font-face {
+    font-family: 'CinzelDecorative Bold';
+    src: url('../fonts/CinzelDecorative-Bold.ttf');
+}
+
+@font-face {
     font-family: 'Ringbearer';
     src: url('../fonts/Ringbearer.ttf');
 }
@@ -64,7 +69,6 @@ body, button {
     display: flex;
     flex-direction: column;
     transition: background-color 1s ease;
-    /*background-color: rgba(0, 0, 0, 0.5);*/
     -webkit-user-select: none;
 }
 
@@ -78,7 +82,7 @@ body, button {
 /* Flexbox to wrap the main frame content. */
 #frameMain {
     display: flex;
-    height: 20px
+    height: 20px;
 }
 
 /* Undraggable region on the left and right of the frame. */
@@ -222,7 +226,7 @@ body, button {
     align-items: center;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(13, 28, 43, 0.5);
 }
 
 #welcomeContent {
@@ -385,7 +389,7 @@ body, button {
     height: 100%;
     width: 100%;
     transition: filter 0.25s ease;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(13, 28, 43, 0.5);
 }
 
 /* Login cancel button styles. */
@@ -887,7 +891,7 @@ body, button {
     height: 100%;
     width: 100%;
     transition: filter 0.25s ease;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(13, 28, 43, 0.5);
 }
 
 #waitingContent {
@@ -966,7 +970,7 @@ body, button {
     height: 100%;
     width: 100%;
     transition: filter 0.25s ease;
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(13, 28, 43, 0.5);
 }
 
 #loginOptionsContent {
@@ -992,7 +996,7 @@ body, button {
 }
 
 .loginOptionButton {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
     border-radius: 3px;
     height: 50px;
@@ -1053,14 +1057,14 @@ body, button {
     position: relative;
     height: 100%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(13, 28, 43, 0.5);
     transition: background-color 0.25s cubic-bezier(.02, .01, .47, 1);
 }
 
 /* Drop shadow displayed when content is scrolled out of view. */
 #settingsContainer:before {
     content: '';
-    background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+    background: linear-gradient(rgba(13, 27, 42, 0.25), transparent);
     width: 100%;
     height: 5px;
     position: absolute;
@@ -1230,7 +1234,7 @@ body, button {
 
 /* Selected server content container */
 .settingsSelServContainer {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     width: 75%;
     border-radius: 3px;
     display: flex;
@@ -1290,7 +1294,7 @@ body, button {
 #settingsContainer input[type=number],
 #settingsContainer input[type=text] {
     color: white;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
     font-family: 'Avenir Book';
@@ -1368,7 +1372,7 @@ body, button {
     left: 3px;
     bottom: 3px;
     background-color: white;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 2px 0px rgba(13, 28, 43, 0.75);
     border-radius: 50px;
     transition: .4s;
 }
@@ -1551,7 +1555,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Auth account shared styles. */
 .settingsAuthAccount {
     display: flex;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
 }
@@ -1715,7 +1719,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsOptModsContent,
 #settingsDropinModsContent {
     font-size: 12px;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border-radius: 3px;
     color: white;
 }
@@ -1802,7 +1806,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Button to open the mods folder for drop-in mods. */
 #settingsDropinFileSystemButton {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
     border-radius: 3px;
     height: 50px;
@@ -1864,7 +1868,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Button to add shaderpacks. */
 #settingsShaderpackButton {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
     border-radius: 3px;
     cursor: pointer;
@@ -1947,7 +1951,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Shared styles between options and selection div. */
 .settingsSelectOptions div,
 .settingsSelectSelected {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border-style: solid;
     border-color: rgba(126, 126, 126, 0.57);
     color: #ffffff;
@@ -2135,7 +2139,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsAboutCurrentContainer {
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
     border-radius: 3px;
     width: 75%;
@@ -2235,7 +2239,7 @@ input:checked + .toggleSwitchSlider:before {
 .settingsChangelogContainer {
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
     border-radius: 3px;
     width: 75%;
@@ -2311,7 +2315,7 @@ input:checked + .toggleSwitchSlider:before {
     text-decoration-color: black;
 }
 .settingsChangelogText .highlight {
-    background: rgba(0, 0, 0, 0.30);
+    background: rgba(13, 28, 43, 0.30);
     user-select: initial;
     padding: 5px 10px;
 }
@@ -2337,7 +2341,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsUpdateStatusContainer {
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
     border: 1px solid rgba(126, 126, 126, 0.57);
     border-radius: 3px;
     width: 75%;
@@ -2482,10 +2486,11 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer > #lower {
     height: 23%;
     display: flex;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(13, 27, 42, 0.60), rgba(13, 28, 43, 0.05));
 }
 #landingContainer > #lower > #left {
     position: relative;
+    margin-top: 8px;
     transition: top 2s ease;
     top: 0px;
     height: 100%;
@@ -2502,6 +2507,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 #landingContainer > #lower > #center {
     position: relative;
+    margin-top: 10px;
     transition: top 2s ease;
     top: 0px;
     height: 100%;
@@ -2554,7 +2560,7 @@ input:checked + .toggleSwitchSlider:before {
 /* Drop shadow displayed when content is scrolled out of view. */
 #newsContent:before {
     content: '';
-    background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+    background: linear-gradient(rgba(13, 27, 42, 0.25), transparent);
     width: 100%;
     height: 5px;
     position: absolute;
@@ -2888,7 +2894,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
     box-shadow: 0 0 15px #43c628;
     animation: glow-grow 4s ease-out infinite;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(13, 28, 43, 0.15);
 }
 #image_seal_container[update]:before {
     animation-delay: 2s;
@@ -2922,7 +2928,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent rgb(0, 0, 0) transparent;
+    border-color: transparent transparent rgb(13, 28, 43) transparent;
 }
 #image_seal_container[update]:hover #updateAvailableTooltip {
     visibility: visible;
@@ -2973,7 +2979,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
     border: 2px solid #cad7e1;
     box-sizing: border-box;
-    background: rgba(1, 2, 1, 0.5);
+    background: rgba(13, 28, 43, 0.50);
     height: 70px;
     width: 70px;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
@@ -2995,7 +3001,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     font-weight: bold;
     letter-spacing: 2px;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(13, 28, 43, 0.35);
     -webkit-user-select: none;
     border: none;
     cursor: pointer;
@@ -3008,12 +3014,13 @@ input:checked + .toggleSwitchSlider:before {
     opacity: 1;
 }
 #avatarOverlay:active {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(13, 28, 43, 0.45);
 }
 
 /* User profile name text. */
 #user_text {
-    font-size: 12px;
+    font-family: 'CinzelDecorative Bold';
+    font-size: 10px;
     min-width: 135px;
     font-weight: 900;
     letter-spacing: 1px;
@@ -3108,7 +3115,7 @@ input:checked + .toggleSwitchSlider:before {
     opacity: 0;
     width: 75px;
     height: 20px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(13, 28, 43, 0.75);
     text-align: center;
     border-radius: 4px;
     position: absolute;
@@ -3126,7 +3133,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+    border-color: transparent transparent transparent rgba(13, 28, 43, 0.75);
 }
 .mediaButton:hover #settingsTooltip,
 .mediaButton:focus #settingsTooltip,
@@ -3237,7 +3244,7 @@ input:checked + .toggleSwitchSlider:before {
     opacity: 0;
     width: 145px;
     min-height: 150px;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(13, 28, 43, 0.75);
     color: #fff;
     border-radius: 4px;
     padding: 5px 10px;
@@ -3259,7 +3266,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+    border-color: rgba(13, 28, 43, 0.75) transparent transparent transparent;
 }
 #mojangStatusWrapper:hover #mojangStatusTooltip {
     visibility: visible;
@@ -3398,11 +3405,11 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: none;
     cursor: pointer;
-    font-weight: 900;
+    font-family: 'CinzelDecorative Bold';
     letter-spacing: 2px;
-    text-shadow: 0px 0px 0px #bebcbb;
-    font-size: 20px;
-    padding: 0px;
+    text-shadow: 0px 0px 0px #c7c7c7;
+    font-size: 28px;
+    padding-right: 20px;
     transition: 0.25s ease;
     outline: none;
 }
@@ -3510,7 +3517,7 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: center;
     width: 100%;
     height: calc(100% - 22px);
-    background: rgba(0, 0, 0, 0.50);
+    background: rgba(13, 28, 43, 0.5);
 }
 
 /* Main overlay content. */
@@ -3711,7 +3718,7 @@ input:checked + .toggleSwitchSlider:before {
     transition: 0.25s ease;
     cursor: pointer;
     position: relative;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(13, 27, 42, 0.25);
 }
 .accountListing[selected] {
     cursor: default;
@@ -3817,7 +3824,7 @@ input:checked + .toggleSwitchSlider:before {
     visibility: hidden;
     opacity: 0;
     width: 65px;
-    background-color: rgba(0, 0, 0, 0.40);
+    background-color: rgba(13, 28, 43, 0.40);
     text-align: center;
     border-radius: 4px;
     position: absolute;
@@ -3834,7 +3841,7 @@ input:checked + .toggleSwitchSlider:before {
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent rgba(0, 0, 0, 0.40) transparent transparent;
+    border-color: transparent rgba(13, 28, 43, 0.40) transparent transparent;
 }
 .serverListingStarWrapper:hover .serverListingStarTooltip {
     visibility: visible;
